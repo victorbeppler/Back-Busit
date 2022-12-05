@@ -1,0 +1,14 @@
+version: '2.2'
+
+services:
+  api:
+    image: back-app
+    build: .
+    ports:
+      - "3005:30005"
+    restart: on-failure
+    container_name: back-app
+    command: npm run start
+    volumes:
+      - .:/app
+      - /app/node_modules
