@@ -5,7 +5,7 @@ services:
     image: back-app
     build: .
     ports:
-      - "3005:30005"
+      - "3005:3005"
     restart: on-failure
     container_name: back-app
     command: npm run start
