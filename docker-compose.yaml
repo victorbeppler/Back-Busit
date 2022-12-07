@@ -2,12 +2,12 @@ version: '2.2'
 
 services:
   api:
-    image: back-app2
+    image: back-app
     build: .
     ports:
-      - "3006:3006"
+      - "3005:3005"
     restart: on-failure
-    container_name: back-app2
+    container_name: back-app
     command: npm run start
     volumes:
       - .:/app
